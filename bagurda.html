@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bagurda</title>
+
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Vesper+Libre:400,900,700' rel='stylesheet' type='text/css'>
+<link href="boilerplate.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+    <div id="audio-autoplay">
+        <audio autoplay>
+            <source src="audio/bagurda.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+	</div>
+    <div id="home">
+   	  <div class="header">
+            <img src="images/wajarri-logo.png" class="only-shrink" />
+ 	  </div>
+      	<div id="content">        
+            <h1>Bagurda</h1>
+            <h3>Bowgada tree, beans from the Bowgada tree</h3>
+          	<a onclick="this.firstChild.play()"><audio src="audio/bagurda.mp3"></audio><img src="images/play-button.png" height="50" width="50" /></a>
+      </div>
+      <div class="footer dock-bottom">
+            <div class="dock-left">
+                <img src="images/bundiyarra logo.png" alt="logo" class="only-shrink" />
+            </div>
+            <div class="dock-right">
+                <div class="dock-top">
+                    <img src="images/ILS_logo.png" alt="ILS logo" class="only-shrink center-horizontal" />
+                </div>
+                <div class="dock-bottom">
+                    &copy; Bundiyarra Aboriginal Community Aboriginal Corporation
+                </div>
+            </div>
+        </div>
+  	</div>
+</div>
+</body>
+</html>
